@@ -42,6 +42,9 @@ class MainActivity : AppCompatActivity() {
             var i = Intent(this , showFilesPDF :: class.java)
             startActivity(i)
         }
+        newButton.setOnClickListener {
+            Toast.makeText(this, "New button clicked", Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
